@@ -3,39 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba de carga a GitHub</title>
+    <title>Prueba de Carga - Presentación</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
             color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: linear-gradient(to right, #4e73df, #224abe);
+            color: #fff;
+            padding: 2rem 1rem;
             text-align: center;
         }
-        h1 {
+        header h1 {
+            margin: 0;
             font-size: 2.5rem;
-            margin-bottom: 1rem;
         }
-        p {
+        header p {
             font-size: 1.2rem;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .section {
             margin-bottom: 2rem;
         }
-        .status {
-            font-size: 1.5rem;
-            color: #28a745;
+        .section h2 {
+            border-bottom: 2px solid #4e73df;
+            padding-bottom: 0.5rem;
+        }
+        .section p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: #f1f1f1;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card h3 {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            margin: 3rem 0 1rem;
+            color: #666;
+        }
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            color: white;
+            background-color: #4e73df;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #224abe;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Prueba de carga de archivo</h1>
-        <p>Esta página es una demostración simple para verificar la carga de archivos en un repositorio de GitHub.</p>
-        <p class="status">El archivo se ha cargado correctamente.</p>
+    <header>
+        <h1>Prueba de Carga de Archivos a GitHub</h1>
+        <p>Demostración compleja de una página HTML para presentación</p>
+    </header>
+    <div class="content">
+        <section class="section">
+            <h2>Introducción</h2>
+            <p>Esta página tiene como objetivo demostrar la carga de archivos a un repositorio en GitHub, utilizando un ejemplo completo que funciona como una presentación interactiva.</p>
+        </section>
+        <section class="section">
+            <h2>Características</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Diseño Moderno</h3>
+                    <p>Se ha implementado un diseño atractivo con estilos CSS responsivos.</p>
+                </div>
+                <div class="card">
+                    <h3>Componentes Flexibles</h3>
+                    <p>División por secciones, tarjetas, y botones interactivos.</p>
+                </div>
+                <div class="card">
+                    <h3>Fácil Integración</h3>
+                    <p>Listo para subir y funcionar en GitHub Pages.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Instrucciones de Uso</h2>
+            <p>Para utilizar esta página como prueba de carga, sigue estos pasos:</p>
+            <ol>
+                <li>Clona el repositorio de GitHub.</li>
+                <li>Añade este archivo como <strong>index.html</strong>.</li>
+                <li>Haz commit y push de los cambios.</li>
+                <li>Activa GitHub Pages desde la configuración del repositorio.</li>
+            </ol>
+            <p>Accede a tu página en: <code>https://<strong>tu-usuario</strong>.github.io/<strong>repositorio</strong></code></p>
+        </section>
+        <section class="section">
+            <h2>Ejemplo</h2>
+            <p>Haz clic en el botón a continuación para ver el repositorio donde se subirá esta página de prueba.</p>
+            <a href="#" class="button">Ver Repositorio</a>
+        </section>
     </div>
+    <footer>
+        <p>&copy; 2024 - Prueba de Carga Completa | Proyecto de Ejemplo</p>
+    </footer>
 </body>
 </html>
